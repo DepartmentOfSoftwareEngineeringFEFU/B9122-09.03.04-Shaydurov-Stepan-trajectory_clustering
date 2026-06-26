@@ -1,0 +1,15 @@
+services:
+  trajectory-analysis:
+    build: .
+    container_name: trajectory-analysis
+    ports:
+      - "8501:8501"
+    volumes:
+      # Для разработки (монтируем код)
+      - ./app.py:/app/app.py
+      - ./modules:/app/modules
+      # Для данных (монтируем папку с CSV)
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

@@ -1,0 +1,6 @@
+@echo off
+echo Building Docker image...
+docker build -t trajectory-analysis .
+
+echo Running Docker container...
+docker run -p 8501:8501 trajectory-analysis

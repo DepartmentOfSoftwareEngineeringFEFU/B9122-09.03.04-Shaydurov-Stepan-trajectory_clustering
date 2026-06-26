@@ -1,0 +1,17 @@
+streamlit==1.32.0
+pandas==2.2.0
+numpy==1.26.3
+scikit-learn==1.4.0
+folium==0.14.0
+streamlit-folium==0.16.0
+plotly==5.18.0
+geopandas==0.14.1
+shapely==2.0.2
+matplotlib==3.8.2
+seaborn==0.13.1
+python-dotenv==1.0.0
+websocket-client
+selenium>=4.15.0
+pillow>=10.0.0
+webdriver-manager>=4.0.0
+scipy>=1.10.0
